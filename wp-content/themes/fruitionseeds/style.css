@@ -1,0 +1,21 @@
+/*
+Theme Name: Fruition Seeds
+Theme URI: https://fruitionseeds.com
+Description: The Fruition Seeds Theme
+Author: Mark Pruce for Fruition Seeds
+Author URI: https://fruitionseeds.com
+Version: 1.0.0
+Text Domain: fruitionseeds
+Template: storefront
+*/
+@font-face {
+  font-family: 'Source Serif';
+  src: url('fonts/sourceserifpro-regular-webfont.woff2') format('woff2'),
+    url('fonts/sourceserifpro-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url('fonts/playfairdisplaysc-regular-webfont.woff2') format('woff2'),
+    url('fonts/playfairdisplaysc-regular-webfont.woff') format('woff');
+}

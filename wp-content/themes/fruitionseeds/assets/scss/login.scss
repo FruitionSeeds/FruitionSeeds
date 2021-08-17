@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Source Serif';
+  src: url("../../fonts/sourceserifpro-regular-webfont.woff2") format('woff2'), url("fonts/sourceserifpro-regular-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url("../../fonts/playfairdisplaysc-regular-webfont.woff2") format('woff2'), url("fonts/playfairdisplaysc-regular-webfont.woff") format('woff');
+}
+// Brand Colors//
+$primary: #889640;
+$secondary: #4F6077;
+$tertiary: #DBE5AC;
+$base: #FEFFF1;
+$base-light: #FEFFF7;
+$base-dark: #F8EACA;
+$success: #788713;
+$info: #00a0a3;
+$warning: #f0ad4e;
+$danger: #c23122;
+$light: #D3D6D3;
+$dark: #494949;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+body {
+  background-color: $base-light;
+  font-family: 'Source Serif', Serif!important;
+  color: $dark;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display SC', Sans-serif!important;
+    font-weight: 100;
+    letter-spacing: 0;
+  }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: 'Source Serif', Serif!important;
+  }
+
+  div#login {
+    form#loginform {
+      background-color: $base;
+    }
+
+    h1 {
+      background: url("../../images/FS_logo_527x152.png") no-repeat center center;
+      background-size: 100%;
+      padding: 50px 0;
+
+      a {
+        display: none;
+      }
+    }
+
+    span.dashicons.dashicons-visibility {
+      color: $secondary;
+    }
+
+    input#wp-submit {
+      background-color: $secondary;
+      border-color: $secondary;
+      font-family: 'Playfair Display SC', Sans-serif!important;
+      padding: 3px 15px 5px;
+    }
+
+    input#user_login {
+      &:focus {
+        border-color: $secondary;
+        box-shadow: 0 0 0 1px $secondary;
+      }
+    }
+  }
+}
